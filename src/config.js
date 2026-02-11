@@ -11,7 +11,7 @@ for (const key of required) {
 
 module.exports = {
   telegramBotToken: process.env.TELEGRAM_BOT_TOKEN,
-  telegramChatId: process.env.TELEGRAM_CHAT_ID,
+  telegramChatIds: process.env.TELEGRAM_CHAT_ID.split(",").map((id) => id.trim()).filter(Boolean),
   pollIntervalMs: 5 * 60 * 1000,
   rssUrl: "https://news.ycombinator.com/rss",
   sendDelayMs: 1500,
