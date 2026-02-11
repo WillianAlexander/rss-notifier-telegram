@@ -1,0 +1,13 @@
+{
+  "name": "news-auto",
+  "version": "1.0.0",
+  "description": "Hacker News RSS to Telegram bot",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "rss-parser": "^3.13.0"
+  }
+}
